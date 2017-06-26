@@ -34,10 +34,10 @@ defaults:
 paginate: 20
 
 #### Site
-title : zl1030
-tagline: A fresh looking and responsive theme for Jekyll
+title : zl1030's blog
+tagline: Veni,vidi,vici
 assets: /assets
-baseurl:
+baseurl: https://zl1030.github.io
 
 #### Language
 language: zh-CN   ## blog site languages: en, zh-CN, zh-TW, de
