@@ -35,9 +35,9 @@ paginate: 20
 
 #### Site
 title : zl1030's blog
-tagline: Veni,vidi,vici
+tagline: Veni,vidi,vici.
 assets: /assets
-baseurl: https://zl1030.github.io/
+baseurl: https://zl1030.github.io
 
 #### Language
 language: zh-CN   ## blog site languages: en, zh-CN, zh-TW, de
@@ -88,15 +88,15 @@ share_to: true #enable share-to buttons if true
 
 #### Author information
 author:
-  name: zhoulei      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
+  name: zl1030      ## e.g. wuchong Author name
+  intro_line1:  "Welcome to the Dark side!"    ## your introduction on the bottom of the page
+  intro_line2:  ""  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
-  email:      ## e.g. imjark@gmail.com
+  email: 651426288@qq.com     ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
   github:     ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
