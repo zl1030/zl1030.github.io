@@ -1,84 +1,85 @@
-# stepbystep  
-A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
+# Jekyll-Jacman
 
-## Preview
-#### PC or Pad
-<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
-#### Mobile
-<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
-</div>
+**中文 | [English](/README_en.md)**
 
-## Features  
+Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Hexo Jacman](https://github.com/wuchong/jacman) 移植而来。
 
-1. Compatible with PC iPad and Phone (RWD)
-2. Support blogger mood-talk(说说)
-3. Support post subdirs as post categories  
-  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
-4. Support pagination
-5. Support pinning posts
+ * [主题演示](http://simpleyyt.github.io/jekyll-jacman/)
+ * [Yitao's Blog](http://simpleyyt.github.io)
+ * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman)
 
-## What Must To Be Set!
+## 本地搭建
+
+确保已安装`Ruby 2.1.0` 或更高版本：
+
+```sh
+ruby --version
 ```
-title:         # your title
-author:        # your name
-email:         # your email
-description: > # your description
 
-domain: "http://yourdomain.github.io" # your domain
+安装`Bundler`：
 
-page_size: 2   # your pagination page size
-
-duoshuo_short_name: "sbys"              # your duoshuo name xxx.duoshuo.com
-duoshuo_user_uid: "6324572809590735618" # your duoshuo user uid
-duoshuo_user_name: "xk"                 # your duoshuo user name
-
-google_analytics_id: ""                 # your google analytics id
-baidu_tongji_id: ""                     # your baidu tongji id
+```sh
+gem install bundler
 ```
-*NOTE* **If you do NOT set the duoshuo short name, all comments would commit to this demo site !**
 
-## Install
-assume the github username is "hello" then:  
+下载 Jacman 主题：
 
-1. create a repository named "hello.github.io"  
-2. clone this repository  
-  `git clone https://github.com/jokinkuang/stepbystep.git`  
-3. push the whole thing to your repo "hello.github.io"  
-  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
-  `git push origin master`  
-4. browse "hello.github.io"  
+```sh
+git clone https://github.com/Simpleyyt/jekyll-jacman.git
+cd jekyll-jacman
+```
 
-> if your github username is "world" then replace upper "hello" all to "world"  
+安装依赖：
 
-## Custom Domain  
-if you want to visit "www.hello.com" instead of "hello.github.io" then:  
+```sh
+bundle install
+```
 
-1. create a file named "CNAME" (the file is already exist)  
-2. buy the "www.hello.com" domain  
-3. add following to the "CNAME"  
-  `www.hello.com`  
-4. go to the Shop where your domain bought and set the Domain DNS to:  
-  | prefix | record-type |      host       |  
-  |   www  |   CNAME     | hello.github.io |  
-5. wait a long long time  
-6. browse "www.hello.com"
+运行 Jekyll：
 
-## Custom Your Site  
-1. you need a [duoshuo](http://www.duoshuo.com) account  
-2. you need a [google-analytics](https://www.google.com/analytics/) account  
-3. all settings are in `_config.yml`
+```sh
+bundle exec jekyll server
+```
 
-## Other  
-whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
+更多细节可以参考：[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
-## Bugs
-see [Release](https://github.com/jokinkuang/stepbystep/releases)
+## 功能
 
-## How It works  
-[English](http://www.jokinkuang.info/2016/09/03/stey-by-step-to-create-a-jekyll-theme.html)  
-[ 中文 ](http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html)
+- **菜单 menu**  
+ 主导航菜单
+- **控件 widget**  
+ 侧边栏的控件。包括：Github 名片	、分类、标签、RSS、友情链接、微博秀。
+- **图片相关 Image**  
+ 设置网站图标、网站logo、作者头像、博客顶部大图等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等。
+- **首页模式 index**  
+ 主题提供了两种首页展示模式。
+- **作者 author**  
+ 作者信息，主要用于展示网站右下角的社交网络链接。包括：微博、豆瓣、知乎、邮箱、GitHub、StackOverflow、Twitter、Facebook、Linkedin、Google+。
+- **目录 toc**  
+ 在文章中和侧边栏可以显示目录。
+- **评论 comments**  
+ [disqus](https://disqus.com/) 评论。
+- **分享 jiathis**  
+ 启用 内建分享工具 或 [加网](http://www.jiathis.com/) 分享系统。
+- **网站统计 Analytiscs**  
+ 支持 [谷歌统计](http://www.google.com/analytics/) & [百度统计](http://tongji.baidu.com/) & [CNZZ站长统计](http://www.cnzz.com/)。
+- **Search**  
+ 支持 [谷歌自定义搜索](https://www.google.com/cse/ ) & [百度站内搜索](http://zn.baidu.com/)  &[微搜索](http://tinysou.com/)。 &[Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+- **totop**  
+ 回到顶部。
+- **rss**  
+ RSS 订阅链接。
+- **fancybox**  
+ 图片查看的 [Fancybox](http://fancyapps.com/fancybox/) 工具。
+- **其他**
+ 你可以设置侧边栏在博文页面中不显示。
 
-## License  
-Under The [MIT](https://tldrlegal.com/license/mit-license) License
+## 协议
+
+[MIT](/LICENSE)
+
+## 捐赠
+
+支付宝捐赠链接还是要有的，万一真的有人捐呢。
+
+![支付宝扫码捐赠](http://p1.bpimg.com/567571/9a4a158daee8aa69.png)
