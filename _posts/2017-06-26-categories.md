@@ -1,10 +1,7 @@
 ---
-title: Categories
-date: 2017-06-26 23:30:09
+title: Jekyll博客第一发
+date: 2017-06-26 18:30:00
 categories:
-- 开发
-- 阅读
-- 电影
 ---
 
-This post contains 3 categories. Make sure your theme can display all of the categories.
+找到个模板，先发一个~~~~~~
